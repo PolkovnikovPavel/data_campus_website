@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="short icon" href="{{ path_to_icon }}" type="image/x-icon">
+		<title>Главная страница</title>
+		<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+	</head>
+	<body>
+		<h1><center>Что за буква?</center></h1>
+		<div class="menu">
+			<div id="item">Меню</div>
+			<div id="submenu">
+				<a href="/description">Описание</a>
+				<a href="https://vk.com/club199040220">Vk-бот</a>
+				<a href="/work">Авторы</a>
+			</div>
+		</div>
+		<br />
+		<br />
+		<style>
+		
+body{
+	background:#191919 url({{ path_to_bg }});
+	background-repeat: no-repeat;
+	
+}
+h1{
+	color: #B9B5FF;
+	font-size:50px;
+}
+h4{
+	color:white;
+}
+#item {
+	background-color: #414141;
+	color: #B9B5FF;
+	padding: 16px;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+}
+#item:hover, #item:focus {
+	background-color: #414141;
+}
+.menu {
+	top:-100px;
+	position: relative;
+	display: inline-block;
+}
+#submenu {
+	display: none;
+	position: absolute;
+	background-color: #313131;
+	min-width: 160px;
+}
+#submenu a {
+	color: #A09DCD;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+#submenu a:hover {
+	background-color: #313131
+}
+		
+		</style>
+		<script>
+$(function() {
+	$("#item").click(function() {
+		$("#submenu").slideToggle(600);
+	});
+}); 
+		
+		</script>
+	</body>
+	
+</html>
