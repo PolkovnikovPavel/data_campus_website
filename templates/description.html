@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<h1><center><img src="{{ path_to_bg }}" height=100px width=400px/></center></h1>
 		<title>Описание</title>
 		<link rel="short icon" href="{{ path_to_icon }}" type="image/x-icon">
+		<hr>
+		<br />
+		<br />
 	</head>
-	<body>
-		<br />
-		<br />
+	<body>	
 		<a id="back" href="/">Назад</a>
 		<br />
 		<h1><center>Описание</center></h1>
@@ -28,11 +30,15 @@
 		</h3>
 		<img src="{{ path_to_img_1 }}" height=300px width=530px/>
 		<style>
-		
+head{
+	margin-right:center;
+}
 body{
-	background:#191919 url({{ path_to_bg }});
-	background-repeat: no-repeat;
+	background:#191919;
 	color: #B9B5FF;
+}
+hr{
+	margin-top: 0px;
 }
 h3{
 	padding:30px;

@@ -1,26 +1,37 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<h1><center><img src="{{ path_to_bg }}" height=100px width=400px/></center></h1>
 		<title>Авторы</title>
 		<link rel="short icon" href="{{ path_to_icon }}" type="image/x-icon">
+		<hr>
 	</head>
 	<body>
 		<br />
 		<br />
 		<a href="/">Назад</a>
+		<img id="photo" src="{{ path_to_photo }}" height=700px width=700px/>
 		<h1><center>Авторы</center></h1>
 		<h3>Участники:
 		<ul>
-			<li>Разработка:</li>
+			<li>Разработка ИИ:</li>
 			Павел Полковников
-			<br />
-			Александров Сергей
 			<br />
 			<br />
 			<li>Разработка сайта:</li>
 			Кондратьев Тимофей
 			<br />
 			Александров Сергей
+			<br />
+			<br />
+			<li>Разработка вк бота:</li>
+			Полковников Павел
+			<br />
+			Александров Сергей
+			<br />
+			<br />
+			<li>Создание датасета:</li>
+			Буслаев Александр
 			<br />
 			<br />
 			<li>Дизайнеры:</li>
@@ -38,16 +49,23 @@
 			<br />
 			Мельников Вадим
 			<br />
+			Буслаев Александр
+			<br />
 			<br />
 		</ul>
 		</h3>
 		<style>
-		
-body{
-	background:#191919 url({{ path_to_bg }});
-	background-repeat: no-repeat;
-	color: #B9B5FF;
+#photo{
+	margin: 0px 0px -800px 300px;
 }
+head{
+	margin-right:center;
+}
+body{
+	background:#191919;
+	color: #B9B5FF;
+	margin-right:center;
+}		
 h3{
 	padding:30px;
 }

@@ -38,6 +38,7 @@ def work():   # главная страница
     data = {}
     data['path_to_bg'] = url_for('static', filename='img/bg.jpg')
     data['path_to_icon'] = url_for('static', filename='img/icon.png')
+    data['path_to_photo'] = url_for('static', filename='img/photo.jpg')
 
     return render_template("work.html", **data)
 
