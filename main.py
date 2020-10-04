@@ -12,7 +12,7 @@ def main():
 
     port = int(os.environ.get("PORT", 5000))
     print(1)
-    app.run(host='0.0.0.0', port=port)
+    app.run(host='127.0.0.1', port=port)
 
 
 @app.route("/")
@@ -20,6 +20,8 @@ def index():   # главная страница
     data = {}
     data['path_to_bg'] = url_for('static', filename='img/bg.jpg')
     data['path_to_icon'] = url_for('static', filename='img/icon.png')
+    data['path_to_img_2'] = url_for('static', filename='img/screen2.png')
+    data['path_to_img_3'] = url_for('static', filename='img/screen3.png')
     return render_template("Main.html", **data)
 
 
